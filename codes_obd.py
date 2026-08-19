@@ -10,6 +10,15 @@ codes = {
             "Prise d'air",
             "Probleme mecanique du moteur",
             "Probleme de cablage ou d'alimentation electrique"
+        ],
+        "controles_recommandes": [
+            "Verifier l'etat des bougies d'allumage",
+            "Verifier le fonctionnement des bobines",
+            "Verifier les injecteurs",
+            "Verifier l'alimentation en carburant",
+            "Rechercher une prise d'air",
+            "Verifier la compression du moteur",
+            "Verifier le cablage et les connexions electriques"
         ]
     },
 
@@ -22,6 +31,13 @@ codes = {
             "Injecteur du cylindre 1",
             "Probleme de cablage",
             "Probleme de compression"
+        ],
+        "controles_recommandes": [
+            "Verifier la bougie du cylindre 1",
+            "Verifier la bobine d'allumage",
+            "Verifier l'injecteur du cylindre 1",
+            "Verifier le cablage",
+            "Verifier la compression du cylindre"
         ]
     },
 
@@ -34,6 +50,13 @@ codes = {
             "Fuite dans l'echappement",
             "Probleme de combustion",
             "Probleme de melange air-carburant"
+        ],
+        "controles_recommandes": [
+            "Verifier les sondes lambda",
+            "Rechercher une fuite dans l'echappement",
+            "Verifier les problemes de combustion",
+            "Verifier le melange air-carburant",
+            "Effectuer un controle du catalyseur"
         ]
     }
 }

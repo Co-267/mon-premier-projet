@@ -8,7 +8,8 @@ print("================================")
 while True:
     print()
     print("1. Lire un code défaut")
-    print("2. Quitter")
+    print("2. Afficher les codes disponibles")
+    print("3. Quitter")
     print()
 
     choix = input("Votre choix : ")
@@ -30,15 +31,28 @@ while True:
             for cause in information["causes_possibles"]:
                 print("-", cause)
 
+            print()
+            print("Contrôles recommandés :")
+
+            for controle in information["controles_recommandes"]:
+                print("-", controle)
+
         else:
             print()
             print("Code inconnu dans la base CO-67.")
 
     elif choix == "2":
         print()
+        print("Codes disponibles :")
+
+        for code, information in codes.items():
+            print(code, "-", information["nom"])
+
+    elif choix == "3":
+        print()
         print("Merci d'avoir utilisé CO-67.")
         break
 
     else:
         print()
-        print("Choix invalide. Entrez 1 ou 2.")
+        print("Choix invalide. Entrez 1, 2 ou 3.")
