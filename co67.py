@@ -1,14 +1,10 @@
+from codes_obd import codes
+
+
 print("================================")
 print("            CO-67")
 print("     DIAGNOSTIC AUTOMOBILE")
 print("================================")
-print()
-
-codes = {
-    "P0300": "Ratés d'allumage aléatoires détectés.",
-    "P0301": "Raté d'allumage détecté sur le cylindre 1.",
-    "P0420": "Efficacité du système catalyseur insuffisante."
-}
 
 while True:
     print()
