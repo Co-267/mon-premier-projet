@@ -88,7 +88,44 @@ codes = {
             "Verifier l'injecteur du cylindre 1",
             "Verifier le cablage",
             "Verifier la compression du cylindre"
-        ]
+        ],
+
+        "symptomes_possibles": [
+            "Moteur qui tremble au ralenti",
+            "Perte de puissance",
+            "A-coups a l'acceleration",
+            "Demarrage difficile",
+            "Voyant moteur allume"
+        ],
+
+        "orientations": {
+            1: [
+                "Controler en priorite la bougie du cylindre 1.",
+                "Verifier ensuite la bobine d'allumage.",
+                "Verifier l'injecteur du cylindre 1."
+            ],
+            2: [
+                "Controler la bougie du cylindre 1.",
+                "Verifier la bobine et l'injecteur.",
+                "Verifier la compression du cylindre 1."
+            ],
+            3: [
+                "Controler la bougie et la bobine du cylindre 1.",
+                "Verifier l'injecteur du cylindre 1.",
+                "Verifier le cablage."
+            ],
+            4: [
+                "Controler la bougie et la bobine.",
+                "Verifier l'injecteur.",
+                "Verifier la pression de carburant.",
+                "Verifier la compression du cylindre 1."
+            ],
+            5: [
+                "Lire tous les codes défaut présents.",
+                "Verifier si d'autres codes sont associés au P0301.",
+                "Controler le systeme d'allumage et d'injection."
+            ]
+        }
     },
 
     "P0420": {
@@ -109,6 +146,42 @@ codes = {
             "Verifier les problemes de combustion",
             "Verifier le melange air-carburant",
             "Effectuer un controle du catalyseur"
-        ]
+        ],
+
+        "symptomes_possibles": [
+            "Voyant moteur allume",
+            "Perte de puissance",
+            "Consommation de carburant augmentee",
+            "Odeur inhabituelle a l'echappement",
+            "Moteur qui fonctionne de maniere irreguliere"
+        ],
+
+        "orientations": {
+            1: [
+                "Lire tous les codes défaut présents.",
+                "Verifier les sondes lambda.",
+                "Verifier les parametres liés au melange air-carburant."
+            ],
+            2: [
+                "Verifier les problemes de combustion.",
+                "Verifier les sondes lambda.",
+                "Rechercher une restriction du systeme d'echappement."
+            ],
+            3: [
+                "Verifier le melange air-carburant.",
+                "Controler les sondes lambda.",
+                "Verifier les problemes de combustion."
+            ],
+            4: [
+                "Rechercher une fuite dans l'echappement.",
+                "Verifier les sondes lambda.",
+                "Verifier le fonctionnement du catalyseur."
+            ],
+            5: [
+                "Verifier les ratés d'allumage.",
+                "Controler l'injection et le melange air-carburant.",
+                "Verifier les sondes lambda."
+            ]
+        }
     }
 }
