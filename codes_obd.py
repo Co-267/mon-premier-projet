@@ -19,6 +19,14 @@ codes = {
             "Rechercher une prise d'air",
             "Verifier la compression du moteur",
             "Verifier le cablage et les connexions electriques"
+        ],
+        "symptomes_possibles": [
+            "Moteur qui tremble au ralenti",
+            "Perte de puissance",
+            "A-coups a l'acceleration",
+            "Demarrage difficile",
+            "Voyant moteur allume",
+            "Consommation de carburant augmentee"
         ]
     },
 

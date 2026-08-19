@@ -4,6 +4,12 @@ print("================================")
 print("            CO-67")
 print("     DIAGNOSTIC AUTOMOBILE")
 print("================================")
+from codes_obd import codes
+
+print("================================")
+print("            CO-67")
+print("     DIAGNOSTIC AUTOMOBILE")
+print("================================")
 
 while True:
     print()
@@ -37,6 +43,13 @@ while True:
             for controle in information["controles_recommandes"]:
                 print("-", controle)
 
+            if "symptomes_possibles" in information:
+                print()
+                print("Symptomes possibles :")
+
+                for symptome in information["symptomes_possibles"]:
+                    print("-", symptome)
+
         else:
             print()
             print("Code inconnu dans la base CO-67.")
@@ -56,3 +69,4 @@ while True:
     else:
         print()
         print("Choix invalide. Entrez 1, 2 ou 3.")
+
