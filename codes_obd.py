@@ -946,4 +946,138 @@ codes = {
             }
         }
     }
+
+,
+
+    "P0304": {
+        "nom": "Rate d'allumage du cylindre 4",
+        "description": "Le calculateur detecte un rate d'allumage sur le cylindre 4.",
+
+        "causes_possibles": [
+            "Bougie du cylindre 4",
+            "Bobine d'allumage",
+            "Injecteur du cylindre 4",
+            "Probleme de cablage",
+            "Probleme de compression"
+        ],
+
+        "controles_recommandes": [
+            "Verifier la bougie du cylindre 4",
+            "Verifier la bobine d'allumage",
+            "Verifier l'injecteur du cylindre 4",
+            "Verifier le cablage",
+            "Verifier la compression du cylindre 4"
+        ],
+
+        "symptomes_possibles": [
+            "Moteur qui tremble au ralenti",
+            "Perte de puissance",
+            "A-coups a l'acceleration",
+            "Demarrage difficile",
+            "Voyant moteur allume"
+        ],
+
+        "orientations": {
+            1: {
+                "priorite_1": ["Controler la bougie du cylindre 4."],
+                "priorite_2": ["Verifier la bobine d'allumage."],
+                "priorite_3": ["Verifier l'injecteur du cylindre 4."]
+            },
+            2: {
+                "priorite_1": [
+                    "Controler la bougie et la bobine du cylindre 4."
+                ],
+                "priorite_2": [
+                    "Verifier l'injecteur du cylindre 4."
+                ],
+                "priorite_3": [
+                    "Verifier la compression du cylindre 4."
+                ]
+            },
+            3: {
+                "priorite_1": [
+                    "Controler la bougie et la bobine du cylindre 4."
+                ],
+                "priorite_2": [
+                    "Verifier l'injecteur du cylindre 4."
+                ],
+                "priorite_3": [
+                    "Verifier le cablage."
+                ]
+            },
+            4: {
+                "priorite_1": [
+                    "Controler l'allumage du cylindre 4."
+                ],
+                "priorite_2": [
+                    "Verifier l'injection."
+                ],
+                "priorite_3": [
+                    "Verifier la compression du cylindre 4."
+                ]
+            },
+            5: {
+                "priorite_1": [
+                    "Lire tous les codes défaut presents."
+                ],
+                "priorite_2": [
+                    "Verifier les codes associes au P0304."
+                ],
+                "priorite_3": [
+                    "Controler l'allumage et l'injection."
+                ]
+            }
+        },
+
+        "conclusion": {
+            1: {
+                "orientation_principale": "Circuit d'allumage du cylindre 4",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Bougie du cylindre 4",
+                    "Bobine d'allumage",
+                    "Injecteur du cylindre 4"
+                ]
+            },
+            2: {
+                "orientation_principale": "Allumage et injection du cylindre 4",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Bougie du cylindre 4",
+                    "Bobine d'allumage",
+                    "Injecteur du cylindre 4",
+                    "Compression du cylindre 4"
+                ]
+            },
+            3: {
+                "orientation_principale": "Allumage et injection du cylindre 4",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Bougie du cylindre 4",
+                    "Bobine",
+                    "Injecteur",
+                    "Cablage"
+                ]
+            },
+            4: {
+                "orientation_principale": "Allumage, injection et compression",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Allumage",
+                    "Injection",
+                    "Compression"
+                ]
+            },
+            5: {
+                "orientation_principale": "Rate d'allumage du cylindre 4",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Codes associes",
+                    "Allumage",
+                    "Injection"
+                ]
+            }
+        }
+    }
+
 }
