@@ -33,40 +33,81 @@ codes = {
         ],
 
         "orientations": {
-            1: [
-                "Controler en priorite les bougies d'allumage.",
-                "Controler ensuite les bobines d'allumage.",
-                "Verifier les injecteurs si le probleme persiste."
-            ],
-            2: [
-                "Controler le systeme d'allumage.",
-                "Verifier les injecteurs.",
-                "Verifier l'alimentation en carburant.",
-                "Verifier la compression du moteur."
-            ],
-            3: [
-                "Controler les bougies et les bobines.",
-                "Verifier les injecteurs.",
-                "Rechercher une prise d'air.",
-                "Verifier l'alimentation en carburant."
-            ],
-            4: [
-                "Controler les bougies et les bobines.",
-                "Verifier les injecteurs.",
-                "Verifier la pression de carburant.",
-                "Verifier la compression du moteur."
-            ],
-            5: [
-                "Lire et noter tous les codes défaut présents.",
-                "Verifier si d'autres codes sont associés au P0300.",
-                "Effectuer les controles d'allumage et d'injection."
-            ],
-            6: [
-                "Verifier les ratés d'allumage.",
-                "Controler le systeme d'allumage.",
-                "Verifier l'injection et l'alimentation en carburant.",
-                "Rechercher un probleme de combustion."
-            ]
+            1: {
+                "priorite_1": [
+                    "Controler l'etat des bougies d'allumage."
+                ],
+                "priorite_2": [
+                    "Controler le fonctionnement des bobines d'allumage."
+                ],
+                "priorite_3": [
+                    "Verifier les injecteurs si le probleme persiste."
+                ]
+            },
+
+            2: {
+                "priorite_1": [
+                    "Controler le systeme d'allumage."
+                ],
+                "priorite_2": [
+                    "Verifier les injecteurs.",
+                    "Verifier l'alimentation en carburant."
+                ],
+                "priorite_3": [
+                    "Verifier la compression du moteur."
+                ]
+            },
+
+            3: {
+                "priorite_1": [
+                    "Controler les bougies et les bobines."
+                ],
+                "priorite_2": [
+                    "Verifier les injecteurs.",
+                    "Rechercher une prise d'air."
+                ],
+                "priorite_3": [
+                    "Verifier l'alimentation en carburant."
+                ]
+            },
+
+            4: {
+                "priorite_1": [
+                    "Controler les bougies et les bobines."
+                ],
+                "priorite_2": [
+                    "Verifier les injecteurs.",
+                    "Verifier la pression de carburant."
+                ],
+                "priorite_3": [
+                    "Verifier la compression du moteur."
+                ]
+            },
+
+            5: {
+                "priorite_1": [
+                    "Lire et noter tous les codes défaut presents."
+                ],
+                "priorite_2": [
+                    "Verifier si d'autres codes sont associes au P0300."
+                ],
+                "priorite_3": [
+                    "Effectuer les controles d'allumage et d'injection."
+                ]
+            },
+
+            6: {
+                "priorite_1": [
+                    "Verifier les rates d'allumage."
+                ],
+                "priorite_2": [
+                    "Controler le systeme d'allumage.",
+                    "Verifier l'injection et l'alimentation en carburant."
+                ],
+                "priorite_3": [
+                    "Rechercher un probleme de combustion."
+                ]
+            }
         }
     },
 
@@ -87,7 +128,7 @@ codes = {
             "Verifier la bobine d'allumage",
             "Verifier l'injecteur du cylindre 1",
             "Verifier le cablage",
-            "Verifier la compression du cylindre"
+            "Verifier la compression du cylindre 1"
         ],
 
         "symptomes_possibles": [
@@ -99,32 +140,67 @@ codes = {
         ],
 
         "orientations": {
-            1: [
-                "Controler en priorite la bougie du cylindre 1.",
-                "Verifier ensuite la bobine d'allumage.",
-                "Verifier l'injecteur du cylindre 1."
-            ],
-            2: [
-                "Controler la bougie du cylindre 1.",
-                "Verifier la bobine et l'injecteur.",
-                "Verifier la compression du cylindre 1."
-            ],
-            3: [
-                "Controler la bougie et la bobine du cylindre 1.",
-                "Verifier l'injecteur du cylindre 1.",
-                "Verifier le cablage."
-            ],
-            4: [
-                "Controler la bougie et la bobine.",
-                "Verifier l'injecteur.",
-                "Verifier la pression de carburant.",
-                "Verifier la compression du cylindre 1."
-            ],
-            5: [
-                "Lire tous les codes défaut présents.",
-                "Verifier si d'autres codes sont associés au P0301.",
-                "Controler le systeme d'allumage et d'injection."
-            ]
+            1: {
+                "priorite_1": [
+                    "Controler la bougie du cylindre 1."
+                ],
+                "priorite_2": [
+                    "Verifier la bobine d'allumage."
+                ],
+                "priorite_3": [
+                    "Verifier l'injecteur du cylindre 1."
+                ]
+            },
+
+            2: {
+                "priorite_1": [
+                    "Controler la bougie du cylindre 1.",
+                    "Verifier la bobine d'allumage."
+                ],
+                "priorite_2": [
+                    "Verifier l'injecteur du cylindre 1."
+                ],
+                "priorite_3": [
+                    "Verifier la compression du cylindre 1."
+                ]
+            },
+
+            3: {
+                "priorite_1": [
+                    "Controler la bougie et la bobine du cylindre 1."
+                ],
+                "priorite_2": [
+                    "Verifier l'injecteur du cylindre 1."
+                ],
+                "priorite_3": [
+                    "Verifier le cablage."
+                ]
+            },
+
+            4: {
+                "priorite_1": [
+                    "Controler la bougie et la bobine."
+                ],
+                "priorite_2": [
+                    "Verifier l'injecteur.",
+                    "Verifier la pression de carburant."
+                ],
+                "priorite_3": [
+                    "Verifier la compression du cylindre 1."
+                ]
+            },
+
+            5: {
+                "priorite_1": [
+                    "Lire tous les codes défaut presents."
+                ],
+                "priorite_2": [
+                    "Verifier si d'autres codes sont associes au P0301."
+                ],
+                "priorite_3": [
+                    "Controler le systeme d'allumage et d'injection."
+                ]
+            }
         }
     },
 
@@ -157,31 +233,69 @@ codes = {
         ],
 
         "orientations": {
-            1: [
-                "Lire tous les codes défaut présents.",
-                "Verifier les sondes lambda.",
-                "Verifier les parametres liés au melange air-carburant."
-            ],
-            2: [
-                "Verifier les problemes de combustion.",
-                "Verifier les sondes lambda.",
-                "Rechercher une restriction du systeme d'echappement."
-            ],
-            3: [
-                "Verifier le melange air-carburant.",
-                "Controler les sondes lambda.",
-                "Verifier les problemes de combustion."
-            ],
-            4: [
-                "Rechercher une fuite dans l'echappement.",
-                "Verifier les sondes lambda.",
-                "Verifier le fonctionnement du catalyseur."
-            ],
-            5: [
-                "Verifier les ratés d'allumage.",
-                "Controler l'injection et le melange air-carburant.",
-                "Verifier les sondes lambda."
-            ]
+            1: {
+                "priorite_1": [
+                    "Lire tous les codes défaut presents."
+                ],
+                "priorite_2": [
+                    "Verifier les sondes lambda.",
+                    "Verifier les parametres lies au melange air-carburant."
+                ],
+                "priorite_3": [
+                    "Controler le catalyseur si les autres controles sont corrects."
+                ]
+            },
+
+            2: {
+                "priorite_1": [
+                    "Verifier les problemes de combustion."
+                ],
+                "priorite_2": [
+                    "Verifier les sondes lambda.",
+                    "Rechercher une restriction du systeme d'echappement."
+                ],
+                "priorite_3": [
+                    "Controler le catalyseur."
+                ]
+            },
+
+            3: {
+                "priorite_1": [
+                    "Verifier le melange air-carburant."
+                ],
+                "priorite_2": [
+                    "Controler les sondes lambda.",
+                    "Verifier les problemes de combustion."
+                ],
+                "priorite_3": [
+                    "Controler le catalyseur."
+                ]
+            },
+
+            4: {
+                "priorite_1": [
+                    "Rechercher une fuite dans l'echappement."
+                ],
+                "priorite_2": [
+                    "Verifier les sondes lambda."
+                ],
+                "priorite_3": [
+                    "Verifier le fonctionnement du catalyseur."
+                ]
+            },
+
+            5: {
+                "priorite_1": [
+                    "Verifier les rates d'allumage."
+                ],
+                "priorite_2": [
+                    "Controler l'injection et le melange air-carburant.",
+                    "Verifier les sondes lambda."
+                ],
+                "priorite_3": [
+                    "Controler le catalyseur."
+                ]
+            }
         }
     }
 }
