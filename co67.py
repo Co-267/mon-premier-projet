@@ -1,5 +1,5 @@
 from codes_obd import codes
-
+from couleurs import titre, succes, attention, danger, information, important
 
 def afficher_separateur():
     print("================================")
@@ -7,8 +7,8 @@ def afficher_separateur():
 
 def afficher_titre():
     afficher_separateur()
-    print("            CO-67")
-    print("     DIAGNOSTIC AUTOMOBILE")
+    print(titre("            CO-67"))
+    print(titre("     DIAGNOSTIC AUTOMOBILE"))
     afficher_separateur()
 
 
