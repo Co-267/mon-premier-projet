@@ -20,6 +20,43 @@ def afficher_menu():
     print()
 
 
+def afficher_conclusion(information, numero):
+    if "conclusion" not in information:
+        return
+
+    conclusions = information["conclusion"]
+
+    if numero not in conclusions:
+        return
+
+    conclusion = conclusions[numero]
+
+    print()
+    afficher_separateur()
+    print("       CONCLUSION CO-67")
+    afficher_separateur()
+
+    print()
+    print("Orientation principale :")
+    print("- " + conclusion["orientation_principale"])
+
+    print()
+    print("Niveau d'attention :")
+    print(conclusion["niveau_attention"])
+
+    print()
+    print("A controler :")
+
+    for element in conclusion["a_controler"]:
+        print("- " + element)
+
+    print()
+    print("IMPORTANT :")
+    print("Cette orientation est une aide au diagnostic.")
+    print("Elle ne remplace pas les mesures et controles")
+    print("effectues sur le vehicule.")
+
+
 def afficher_code(information, code):
     print()
     afficher_separateur()
@@ -103,7 +140,7 @@ def afficher_code(information, code):
 
     if numero not in orientations:
         print()
-        print("Aucune orientation disponible pour ce symptome.")
+        print("Aucune orientation disponible.")
         return
 
     orientation = orientations[numero]
@@ -139,6 +176,8 @@ def afficher_code(information, code):
 
         for element in orientation:
             print("- " + element)
+
+    afficher_conclusion(information, numero)
 
     print()
     print("Fin de l'orientation CO-67.")

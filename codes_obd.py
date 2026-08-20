@@ -44,7 +44,6 @@ codes = {
                     "Verifier les injecteurs si le probleme persiste."
                 ]
             },
-
             2: {
                 "priorite_1": [
                     "Controler le systeme d'allumage."
@@ -57,7 +56,6 @@ codes = {
                     "Verifier la compression du moteur."
                 ]
             },
-
             3: {
                 "priorite_1": [
                     "Controler les bougies et les bobines."
@@ -70,7 +68,6 @@ codes = {
                     "Verifier l'alimentation en carburant."
                 ]
             },
-
             4: {
                 "priorite_1": [
                     "Controler les bougies et les bobines."
@@ -83,7 +80,6 @@ codes = {
                     "Verifier la compression du moteur."
                 ]
             },
-
             5: {
                 "priorite_1": [
                     "Lire et noter tous les codes défaut presents."
@@ -95,7 +91,6 @@ codes = {
                     "Effectuer les controles d'allumage et d'injection."
                 ]
             },
-
             6: {
                 "priorite_1": [
                     "Verifier les rates d'allumage."
@@ -106,6 +101,66 @@ codes = {
                 ],
                 "priorite_3": [
                     "Rechercher un probleme de combustion."
+                ]
+            }
+        },
+
+        "conclusion": {
+            1: {
+                "orientation_principale": "Systeme d'allumage et combustion",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Bougies d'allumage",
+                    "Bobines d'allumage",
+                    "Injecteurs"
+                ]
+            },
+            2: {
+                "orientation_principale": "Systeme d'allumage et alimentation en carburant",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Bougies",
+                    "Bobines",
+                    "Injecteurs",
+                    "Alimentation en carburant"
+                ]
+            },
+            3: {
+                "orientation_principale": "Systeme d'allumage et injection",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Bougies",
+                    "Bobines",
+                    "Injecteurs",
+                    "Prise d'air"
+                ]
+            },
+            4: {
+                "orientation_principale": "Allumage, injection et compression",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Bougies",
+                    "Bobines",
+                    "Injecteurs",
+                    "Compression moteur"
+                ]
+            },
+            5: {
+                "orientation_principale": "Systeme moteur a diagnostiquer",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Tous les codes défaut",
+                    "Systeme d'allumage",
+                    "Systeme d'injection"
+                ]
+            },
+            6: {
+                "orientation_principale": "Combustion et alimentation moteur",
+                "niveau_attention": "MOYEN A ELEVE",
+                "a_controler": [
+                    "Allumage",
+                    "Injection",
+                    "Alimentation en carburant"
                 ]
             }
         }
@@ -151,7 +206,6 @@ codes = {
                     "Verifier l'injecteur du cylindre 1."
                 ]
             },
-
             2: {
                 "priorite_1": [
                     "Controler la bougie du cylindre 1.",
@@ -164,7 +218,6 @@ codes = {
                     "Verifier la compression du cylindre 1."
                 ]
             },
-
             3: {
                 "priorite_1": [
                     "Controler la bougie et la bobine du cylindre 1."
@@ -176,7 +229,6 @@ codes = {
                     "Verifier le cablage."
                 ]
             },
-
             4: {
                 "priorite_1": [
                     "Controler la bougie et la bobine."
@@ -189,7 +241,6 @@ codes = {
                     "Verifier la compression du cylindre 1."
                 ]
             },
-
             5: {
                 "priorite_1": [
                     "Lire tous les codes défaut presents."
@@ -199,6 +250,57 @@ codes = {
                 ],
                 "priorite_3": [
                     "Controler le systeme d'allumage et d'injection."
+                ]
+            }
+        },
+
+        "conclusion": {
+            1: {
+                "orientation_principale": "Circuit d'allumage du cylindre 1",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Bougie du cylindre 1",
+                    "Bobine d'allumage",
+                    "Injecteur du cylindre 1"
+                ]
+            },
+            2: {
+                "orientation_principale": "Allumage et injection du cylindre 1",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Bougie du cylindre 1",
+                    "Bobine d'allumage",
+                    "Injecteur du cylindre 1",
+                    "Compression du cylindre 1"
+                ]
+            },
+            3: {
+                "orientation_principale": "Allumage et injection du cylindre 1",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Bougie du cylindre 1",
+                    "Bobine",
+                    "Injecteur",
+                    "Cablage"
+                ]
+            },
+            4: {
+                "orientation_principale": "Allumage, injection et compression",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Bougie",
+                    "Bobine",
+                    "Injecteur",
+                    "Compression"
+                ]
+            },
+            5: {
+                "orientation_principale": "Raté d'allumage du cylindre 1",
+                "niveau_attention": "ELEVE",
+                "a_controler": [
+                    "Tous les codes défaut",
+                    "Allumage",
+                    "Injection"
                 ]
             }
         }
@@ -245,7 +347,6 @@ codes = {
                     "Controler le catalyseur si les autres controles sont corrects."
                 ]
             },
-
             2: {
                 "priorite_1": [
                     "Verifier les problemes de combustion."
@@ -258,7 +359,6 @@ codes = {
                     "Controler le catalyseur."
                 ]
             },
-
             3: {
                 "priorite_1": [
                     "Verifier le melange air-carburant."
@@ -271,7 +371,6 @@ codes = {
                     "Controler le catalyseur."
                 ]
             },
-
             4: {
                 "priorite_1": [
                     "Rechercher une fuite dans l'echappement."
@@ -283,7 +382,6 @@ codes = {
                     "Verifier le fonctionnement du catalyseur."
                 ]
             },
-
             5: {
                 "priorite_1": [
                     "Verifier les rates d'allumage."
@@ -294,6 +392,58 @@ codes = {
                 ],
                 "priorite_3": [
                     "Controler le catalyseur."
+                ]
+            }
+        },
+
+        "conclusion": {
+            1: {
+                "orientation_principale": "Systeme antipollution et controle du catalyseur",
+                "niveau_attention": "MOYEN",
+                "a_controler": [
+                    "Codes défaut associes",
+                    "Sondes lambda",
+                    "Melange air-carburant",
+                    "Catalyseur"
+                ]
+            },
+            2: {
+                "orientation_principale": "Combustion et systeme d'echappement",
+                "niveau_attention": "MOYEN A ELEVE",
+                "a_controler": [
+                    "Combustion",
+                    "Sondes lambda",
+                    "Echappement",
+                    "Catalyseur"
+                ]
+            },
+            3: {
+                "orientation_principale": "Melange air-carburant",
+                "niveau_attention": "MOYEN",
+                "a_controler": [
+                    "Melange air-carburant",
+                    "Sondes lambda",
+                    "Combustion",
+                    "Catalyseur"
+                ]
+            },
+            4: {
+                "orientation_principale": "Systeme d'echappement",
+                "niveau_attention": "MOYEN",
+                "a_controler": [
+                    "Fuites d'echappement",
+                    "Sondes lambda",
+                    "Catalyseur"
+                ]
+            },
+            5: {
+                "orientation_principale": "Combustion et systeme antipollution",
+                "niveau_attention": "MOYEN A ELEVE",
+                "a_controler": [
+                    "Allumage",
+                    "Injection",
+                    "Sondes lambda",
+                    "Catalyseur"
                 ]
             }
         }
